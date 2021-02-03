@@ -1,0 +1,202 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    color: #666666;
+    background-color: #f1f1f1;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: #666666;
+    margin: 10px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 1.5em 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    max-width: 1400px;
+    width: calc(100% - 1em);
+    margin: 1em 0.5em 0;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 650px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    margin: 0 0.5em 1em;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-con {
+    width: 100%;
+    position: relative;
+}
+
+.image-con>img {
+    width: 100%;
+}
+
+.image-con>h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0.5em;
+    margin: 0.5em 0;
+    color: #000000;
+}
+
+.info-con {
+    padding: 0 1em;
+    flex: 1;
+}
+
+.info-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-list>li {
+    margin: 1em 0;
+}
+
+.info-list>li>i,
+.info-list>li>h3>i,
+.card-body>h3>i,
+.row>h6>i {
+    color: #009688;
+    margin-right: 0.5em;
+}
+
+.info-list>li>h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.progress>p {
+    font-size: 1em;
+    margin: 1em 0;
+}
+
+.progress>div {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 1em;
+    overflow: hidden;
+    line-height: 1.2em;
+}
+
+.progress>div>span {
+    display: block;
+    background-color: #009688;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 1em;
+}
+
+.progress>div>.empty-bar {
+    height: 2em;
+}
+
+.content {
+    flex: 2.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    padding: 0 1em;
+}
+
+.card-body>h3 {
+    padding: 1em 0;
+}
+
+.card-body>.row {
+    padding: 0 1em;
+}
+
+.row>h5 {
+    font-size: 1.13em;
+    font-weight: 400;
+}
+
+.row>h6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #009688;
+}
+
+.row>h6>.badge {
+    color: white;
+    background-color: #009688;
+    padding: 0.25em 0.5em;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.row>p {
+    margin: 1em 0;
+    color: #000000;
+    text-align: left;
+}
+
+.footer {
+    padding: 1em;
+    width: 100%;
+    background-color: #009688;
+    color: white;
+    text-align: center;
+}
+
+.footer>p {
+    color: white;
+}
+
+.footer>p>a {
+    color: white;
+}
+
+.footer>p>i:hover {
+    opacity: 0.60;
+}
